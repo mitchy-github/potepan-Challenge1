@@ -1,0 +1,602 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+/*今の所、width,height,padding,marginの使い分け,%,px,vh,vmの使い分けが
+うまく理解できておらず、思い通りの表示や動きににならなかったりと見直しが必要だと感じた*/
+
+
+/*最初にPC用を記述（1088px以上） */
+
+p{
+  color: orange;
+
+}
+
+.Toggle {
+  display:none !important;
+  
+}
+
+.desktop-hidden {
+  display: none;
+  
+}
+
+.flexitem2 {
+  display: none!important;
+  
+}
+
+ 
+@media screen and (min-width:601px) and (max-width:1088px) {
+/* タブレット用のcssを記述 */
+p {
+  color: blue;
+  
+}
+ 
+.menu{
+  display:none;
+  
+}
+
+.Toggle {
+  display:block !important;
+  
+}
+
+
+.header__oyayouso {
+  position: static !important;
+  background-color: white;
+  
+}
+
+.desktop-hidden {
+  display: none;
+  
+}
+
+.flexitem2 {
+  display: none!important;
+  
+}
+}
+
+
+@media screen and (max-width:600px) {
+/* スマホ用のcssを記述 */
+p{
+  color: orange;
+  
+}
+
+.menu{
+  display:none;
+  
+}
+
+.Toggle {
+  display:block !important;
+  
+}
+
+.header__oyayouso {
+  position: static !important;
+  
+}
+
+.top__oyayouso {
+  box-sizing:border-box;
+  position: relative;
+  max-width: 100%;
+  height: 800px;
+  padding: 0 0 30px!important;
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp)!important;
+  background-size: contain!important;
+  background-position: top!important;
+  
+}
+
+.top__page {
+  box-sizing:border-box;
+  position: absolute;
+  align-items: flex-end;
+  max-width: 100%;
+  width: 430px;
+  bottom: 30px;
+  padding: 0 20px 0!important;
+  
+}
+
+.font-large {
+  font-size: 25px!important;
+  
+}
+
+.header__inner2 {
+  display: none;
+  
+}
+
+.flexitem2 {
+  display: block!important;
+  text-align: center;
+  
+}
+ 
+.navLink__btn4 {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: /*1em*/0;     /*大まかな枠を設定後左右移動設定*/
+  font-size: /*1em*/13px;
+  color: white;
+  background-color: #f79214;
+  padding: 20px 20px; /* 塗りの余白 */
+  border-width: 1px;
+  
+}
+
+.navLink__btn4:hover,
+a.navLink__btn4:hover {
+  color: #fff;
+  background: #fdb86d;
+  
+}
+
+a.navLink__btn4 {
+  border-radius: 100vh;
+  
+}
+
+.aboutWrapper {/*もとbg*/
+  padding: 20px 0 20px!important;
+  
+}
+
+.about {/*もとvideo*/            
+  padding: 0 20px 0!important;
+  
+}
+}
+
+
+/*ヘッダー*/
+
+.header__siteTitle {
+  margin-left: 1.8em;
+  margin-top: 3em;
+  
+}
+
+.titleimg {
+  width: 177px;
+  
+}
+
+.header__oyayouso {
+  position: absolute;/*これでヘッダーとメインが重なった*/
+  box-sizing:border-box;
+  width: 100%;
+  padding: 18px 0 18px;
+  
+}
+
+.header__inner {
+  display: flex;
+  justify-content:space-between;
+  max-width: 100%;
+  width:auto;
+  margin-left:40px;
+  margin-right:40px;
+  box-sizing:border-box;
+  height: auto;
+  
+}
+
+.header__logo {
+  width:200px;
+  height:auto;
+  
+}
+
+.header__navList {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  
+}
+
+.header__navListItem {
+  text-align: center;
+  margin-right: 30px;
+  
+}
+
+.header__navLink {
+  text-decoration: none;
+  color: black;
+  
+}
+
+/*brタグの感覚狭める*/
+.br1 {
+  display: block;
+  content: "";
+  margin: -10px 0;
+  
+}
+
+.font-weight1 {
+  font-weight: 900;
+  font-size: /*1em*/13px;
+  line-height: 0;
+  
+}
+ 
+ .font-weight2 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 0;
+  
+}
+
+.btn--orange,
+a.btn--orange {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f79214;
+  margin-top: 0em;
+  margin-right:  /*1em*/ -30px; /* 前後の隙間 */
+  padding: 13px 20px; /* 塗りの余白 */
+  font-size: /*1em*/11px; /* フォントサイズ */
+  /*font-weight: bold;フォントタイプ*/
+  
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #fdb86d;
+  
+}
+
+a.btn--orange {
+  border-radius: 100vh;
+  
+}
+
+
+/*メイントップページ*/
+
+.top__oyayouso {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;/*謎の右余白なくなった*/
+  padding: 95px 0 30px;
+  
+}
+
+.top__page {
+  box-sizing:border-box;
+  max-width: 100%;          /*orange*/        
+  width: 1140px;            /*blue*/
+  padding: 0 50px 0;        /*green*/
+  margin: 0px auto;
+  
+}
+
+.p__igai {
+  max-width: 100%;
+  height: auto;          /*blue*/
+  width: 500px;          /*orange*/
+  margin-bottom: 40px;   /*orange*/
+  
+}
+
+
+/*最短5ヶ月間で
+　未経験からWebエンジニアへ*/
+.font-large {
+  text-align: center;
+  font-size: 36.5px;
+  font-weight: bold;
+  
+}
+
+.relative {
+  font-size: 12px;
+  
+}
+ 
+.flexbox {
+  display: flex!important;
+  align-items:center;
+  margin-top: 20px;
+  gap: 0 15px;
+  
+}
+
+.flexitem {
+  display: flex;
+  flex-direction: column;
+  
+}
+ 
+.child1 {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  
+}
+ 
+ 
+.child2 {
+  display: block;
+  max-width: 100%;
+  width: 220px;
+  height: auto; 
+  
+}
+ 
+ 
+.child3 {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  
+}
+
+.header__navList2 {
+  width: auto;
+  display: flex;
+  
+}
+
+.header__navListItem2 {
+  list-style: none
+  
+}
+ 
+.header__navLink2,
+a.header__navLink2 {
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 15.5px;
+  color: white;
+  background-color: #f79214;
+  padding: 20px 35px; /* 塗りの余白 */
+  max-width: 100%;
+  width: 100%;
+  
+}
+
+.header__navLink2:hover,
+a.header__navLink2:hover {
+  color: #fff;
+  background: #f56500;
+  
+}
+
+a.header__navLink2 {
+  border-radius: 100vh;
+  
+}
+
+.header__navLink3,
+a.header__navLink3 {
+  display:block;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 1em;     /*大まかな枠を設定後左右移動設定*/
+  font-size: 15.5px;
+  color: black;
+  background-color: white;
+  padding: 20px 20px;    /* 塗りの余白 */
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+  
+}
+
+.header__navLink3:hover,
+a.header__navLink3:hover {
+  color: black;
+  background: white;
+  
+}
+
+a.header__navLink3 {
+  border-radius: 100vh;
+  
+}
+
+
+/*二段目の見出し*/
+
+.aboutWrapper {/*もとbg*/
+  position: relative;
+  background-color: #f79214;
+  box-sizing:border-box;
+  height: auto;
+  padding: 50px 0 50px;
+  
+}
+
+.about {/*もとvideo/            
+   孫要素(ビデオとタイトルの)
+/*1__display: flex; で横にする*/
+/*2__max-width: 1040px; で親の横枠決める*/
+/*3__margin: 0 auto; で高さの指定*/
+/*4__padding: 50px; で子要素の余白指定*/
+  box-sizing:border-box;
+  display: flex; 
+  justify-content: center;
+  background-color: #f79214;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 1140px;
+  height: auto;
+  padding: 0 50px 0;
+  margin: 0px auto;
+  text-align: center;
+  
+}
+
+.about-video {
+  max-width: 100%;
+  background-color:red;
+  width:auto; /*意味はあるのか？*/
+  height:100%; /*意味はあるのか？*/
+  text-align: center;
+  
+}
+
+video {
+  max-width: 100%;
+  width: 100%;
+  
+}
+
+.about__title {/*mv-text*/
+/*width: 1000em; /*いくらやっても変わらなかった？？？*/
+/*動画と文章の余白のために左のみ30pxのみ空けた*/
+  max-width: 100%;
+  width: 500px;
+  height: auto; /*該当するコンテンツの枠の高さ。ここでゆうとタイトル*/
+  background-color:#f79214;
+  text-align: left;
+  margin-left: 30px;
+  
+}
+
+.mv-text__h2 {
+  font-size:30px;
+  letter-spacing:0.12em;
+  color: white;
+  
+}
+
+.mv-text__p {
+  font-size: 15px;
+  margin-top:10px;
+  margin-bottom:10px;
+  letter-spacing:0.1em;
+  color: white;
+  
+}
+
+.about__button__oyayouso {
+  display: flex;
+  width: auto;
+  height:auto;
+  
+}
+
+ .about__button__img {
+  display: flex;
+  box-sizing:border-box;
+  width: 30px;
+  height:auto;
+  
+}
+
+.about__button__text {
+  display: block;
+  line-height: 30px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+
+/*右下のリンクボタン*/
+
+.FixedFooter {
+  position: fixed;    /* bodyに対しての絶対位置指定 */
+  right: 10px;
+  bottom: 50px;
+  transition:1s;
+  margin-left: 10px;
+  
+}
+
+.lazyloaded {
+  display: block;
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  
+}
+
+
+/*トグルボタンのスタイルを指定*/
+
+.Toggle {
+  display: block;
+  position: absolute;    /* bodyに対しての絶対位置指定 */
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 3;
+  right:30px;
+  
+}
+ 
+.Toggle span {
+  display: block;
+  position: absolute;
+  width: 50px;
+  border-bottom: solid 4px #333;
+  -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+  transition: .35s ease-in-out;			/*変化の速度を指定*/
+  
+}
+ 
+.Toggle span:nth-child(1) {
+  top:0px;
+  
+}
+ 
+.Toggle span:nth-child(2) {
+  top: 12px;
+  
+}
+ 
+.Toggle span:nth-child(3) {
+  top: 24px;
+  
+}
+ 
+.Toggle.active span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
