@@ -76,7 +76,13 @@
 
 .header__oyayouso {
   position: static !important;
+  background-color: white;
   
+}
+
+.header__inner {
+  margin-right:82px!important;
+
 }
 
 .top__oyayouso {
@@ -90,9 +96,8 @@
 }
 
 .imgsumaho{
-  display: block!important;
+  display: block;
   margin-top: 0;
-  background-color: white;
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -101,13 +106,12 @@
 
 .top__page {
   box-sizing:border-box;
-  position:relative!important;
+  position:relative;
   align-items: center;
   max-width: 100%;
   width: 100%;
   padding: 0 20px 0!important;
   margin-top: -45vw!important;
-  left: 0!important;
   
 }
 
@@ -168,6 +172,11 @@ a.navLink__btn4 {
 .about {          
   padding: 0 20px 0!important;
 
+}
+
+video {
+  height: auto;
+  
 }
   
 .about__title {
@@ -289,8 +298,10 @@ a.btn--orange {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: white;
   overflow: hidden;/*謎の右余白なくなった*/
   padding: 95px 0 30px;
+  
   
 }
 
@@ -392,7 +403,7 @@ a.header__navLink2 {
 .header__navLink2:hover,
 a.header__navLink2:hover {
   color: #fff;
-  background: #f56500;
+  background: #fdb86d;
   
 }
 
@@ -458,7 +469,7 @@ a.header__navLink3 {
 .about-video {
   max-width: 100%;
   background-color:red;
-  width:auto; 
+  width:100%; 
   height:100%;
   text-align: center;
   
@@ -473,10 +484,9 @@ video {
 .about__title {
   max-width: 100%;
   width: 500px;
-  height: auto;
   background-color:#f79214;
   text-align: left;
-  margin-left: 30px;
+  margin:auto 0 auto 30px;
   
 }
 
