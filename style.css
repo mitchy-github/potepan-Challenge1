@@ -339,7 +339,7 @@ a.btn--orange {
 }
  
 .flexbox {
-  display: flex!important;
+  display: flex;
   align-items:center;
   margin-top: 20px;
   gap: 0 15px;
