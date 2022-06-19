@@ -5,17 +5,11 @@
   box-sizing:border-box;
 }
 
-/*今の所、width,height,padding,marginの使い分け,%,px,vh,vmの使い分けが
+/*現段階で、width,height,padding,marginの使い分け,%,px,vh,vmの使い分けが
 うまく理解できておらず、思い通りの表示や動きににならなかったりと見直しが必要だと感じた*/
 
 
 /*最初にPC用を記述（1088px以上） */
-
-p{
-  color: orange;
-
-}
-
 .Toggle {
   display:none !important;
   
@@ -31,14 +25,14 @@ p{
   
 }
 
+.imgsumaho{
+    display: none;
+    
+}
+
  
 @media screen and (min-width:601px) and (max-width:1088px) {
 /* タブレット用のcssを記述 */
-p {
-  color: blue;
-  
-}
- 
 .menu{
   display:none;
   
@@ -70,11 +64,6 @@ p {
 
 @media screen and (max-width:600px) {
 /* スマホ用のcssを記述 */
-p{
-  color: orange;
-  
-}
-
 .menu{
   display:none;
   
@@ -92,31 +81,40 @@ p{
 
 .top__oyayouso {
   box-sizing:border-box;
-  position: relative;
   max-width: 100%;
-  height: 800px;
-  padding: 0 0 30px!important;
-  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp)!important;
-  background-size: contain!important;
-  background-position: top!important;
+  width:100%;
+  height: auto;
+  padding: 0 0 20px!important;
+  background-image: url(none)!important;
   
+}
+
+.imgsumaho{
+  display: block!important;
+  margin-top: 0;
+  background-color: white;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+    
 }
 
 .top__page {
   box-sizing:border-box;
-  position: absolute;
-  align-items: flex-end;
+  position:relative!important;
+  align-items: center;
   max-width: 100%;
-  width: 430px;
-  bottom: 30px;
+  width: 100%;
   padding: 0 20px 0!important;
+  margin-top: -45vw!important;
+  left: 0!important;
   
 }
 
 .p__igai {
   max-width: 100%;
   height: auto;          /*blue*/
-  width: 0;          /*orange*/
+  width: 0;              /*orange*/
   margin-bottom: 40px;   /*orange*/
 
 }
@@ -141,8 +139,8 @@ p{
   display: block;
   text-decoration: none;
   margin-top: 20px;
-  margin-left: /*1em*/0;     /*大まかな枠を設定後左右移動設定*/
-  font-size: /*1em*/13px;
+  margin-left: 0;
+  font-size: 13px;
   color: white;
   background-color: #f79214;
   padding: 20px 20px; /* 塗りの余白 */
@@ -162,12 +160,12 @@ a.navLink__btn4 {
   
 }
 
-.aboutWrapper {/*もとbg*/
+.aboutWrapper {
   padding: 20px 0 20px!important;
   
 }
 
-.about {/*もとvideo*/            
+.about {          
   padding: 0 20px 0!important;
 
 }
@@ -180,7 +178,6 @@ a.navLink__btn4 {
 
 
 /*ヘッダー*/
-
 .header__siteTitle {
   margin-left: 1.8em;
   margin-top: 3em;
@@ -247,7 +244,7 @@ a.navLink__btn4 {
 
 .font-weight1 {
   font-weight: 900;
-  font-size: /*1em*/13px;
+  font-size: 13px;
   line-height: 0;
   
 }
@@ -266,9 +263,9 @@ a.btn--orange {
   color: #fff;
   background-color: #f79214;
   margin-top: 0em;
-  margin-right:  /*1em*/ -30px; /* 前後の隙間 */
+  margin-right: -30px; /* 前後の隙間 */
   padding: 13px 20px; /* 塗りの余白 */
-  font-size: /*1em*/11px; /* フォントサイズ */
+  font-size: 11px; /* フォントサイズ */
   /*font-weight: bold;フォントタイプ*/
   
 }
@@ -287,7 +284,6 @@ a.btn--orange {
 
 
 /*メイントップページ*/
-
 .top__oyayouso {
   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
   background-size: cover;
@@ -327,6 +323,7 @@ a.btn--orange {
 
 .relative {
   font-size: 12px;
+  color: #a2a2a4;
   
 }
  
@@ -351,7 +348,6 @@ a.btn--orange {
   
 }
  
- 
 .child2 {
   display: block;
   max-width: 100%;
@@ -359,7 +355,6 @@ a.btn--orange {
   height: auto; 
   
 }
- 
  
 .child3 {
   display: block;
@@ -411,14 +406,14 @@ a.header__navLink3 {
   display:block;
   text-decoration: none;
   margin-top: 20px;
-  margin-left: 1em;     /*大まかな枠を設定後左右移動設定*/
+  margin-left: 1em;
   font-size: 15.5px;
   color: black;
   background-color: white;
   padding: 20px 20px;    /* 塗りの余白 */
   border-width: 1px;
   border-style: solid;
-  border-color: #dcdcdc;
+  border-color: #a2a2a4;
   
 }
 
@@ -436,8 +431,7 @@ a.header__navLink3 {
 
 
 /*二段目の見出し*/
-
-.aboutWrapper {/*もとbg*/
+.aboutWrapper {
   position: relative;
   background-color: #f79214;
   box-sizing:border-box;
@@ -446,12 +440,7 @@ a.header__navLink3 {
   
 }
 
-.about {/*もとvideo/            
-   孫要素(ビデオとタイトルの)
-/*1__display: flex; で横にする*/
-/*2__max-width: 1040px; で親の横枠決める*/
-/*3__margin: 0 auto; で高さの指定*/
-/*4__padding: 50px; で子要素の余白指定*/
+.about {
   box-sizing:border-box;
   display: flex; 
   justify-content: center;
@@ -469,8 +458,8 @@ a.header__navLink3 {
 .about-video {
   max-width: 100%;
   background-color:red;
-  width:auto; /*意味はあるのか？*/
-  height:100%; /*意味はあるのか？*/
+  width:auto; 
+  height:100%;
   text-align: center;
   
 }
@@ -481,12 +470,10 @@ video {
   
 }
 
-.about__title {/*mv-text*/
-/*width: 1000em; /*いくらやっても変わらなかった？？？*/
-/*動画と文章の余白のために左のみ30pxのみ空けた*/
+.about__title {
   max-width: 100%;
   width: 500px;
-  height: auto; /*該当するコンテンツの枠の高さ。ここでゆうとタイトル*/
+  height: auto;
   background-color:#f79214;
   text-align: left;
   margin-left: 30px;
@@ -537,9 +524,8 @@ video {
 
 
 /*右下のリンクボタン*/
-
 .FixedFooter {
-  position: fixed;    /* bodyに対しての絶対位置指定 */
+  position: fixed;
   right: 10px;
   bottom: 50px;
   transition:1s;
@@ -557,10 +543,9 @@ video {
 
 
 /*トグルボタンのスタイルを指定*/
-
 .Toggle {
   display: block;
-  position: absolute;    /* bodyに対しての絶対位置指定 */
+  position: absolute;
   width: 42px;
   height: 42px;
   cursor: pointer;
@@ -574,9 +559,9 @@ video {
   position: absolute;
   width: 50px;
   border-bottom: solid 4px #333;
-  -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
-  -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
-  transition: .35s ease-in-out;			/*変化の速度を指定*/
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
   
 }
  
