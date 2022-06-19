@@ -113,6 +113,14 @@ p{
   
 }
 
+.p__igai {
+  max-width: 100%;
+  height: auto;          /*blue*/
+  width: 0;          /*orange*/
+  margin-bottom: 40px;   /*orange*/
+
+}
+
 .font-large {
   font-size: 25px!important;
   
@@ -161,6 +169,11 @@ a.navLink__btn4 {
 
 .about {/*もとvideo*/            
   padding: 0 20px 0!important;
+
+}
+  
+.about__title {
+  margin-left: auto!important;
   
 }
 }
